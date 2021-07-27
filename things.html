@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" style="border-radius: 50%;">
+    <title>Things to do</title>
+    <style>
+    .cover {
+        width: 100%;
+        height: 500px;
+        background-image: url("https://2.bp.blogspot.com/-r5B0WhDzHc0/WFDIaeu-SCI/AAAAAAABDkw/SfbydEiTL-8EG5we1RAj-NKX1vdF1uRpACLcB/s1600/20160515_104916.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .local, .food, .tourism {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .local img {
+        width: 480px;
+        margin: 0;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .local h3 {
+        color: white;
+        background-color: #515A5A;
+        text-align: center;
+        padding: 10px;
+        margin-top: 0;
+        border-radius: 8px;
+    }
+
+    .local p {
+        text-align: justify;
+        text-justify: inter-word;
+        width: 400px;
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .local table, .food table, .tourism table {
+        background-color: #F2F3F4;
+    }
+
+    .local table {
+        padding: 10px;
+        padding: 10px;    
+    }
+
+    .local td {
+        vertical-align: top;
+    }
+
+    .food img {
+        width: 550px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        padding: 10px;
+        float: right;
+    }
+
+    .food .description {
+        padding: 20px;
+        margin: 30px auto;
+        width: 500px;
+    }
+
+    .food h3, .tourism h3 {
+        padding: 20px;
+    }
+
+    .food p {
+        padding: 30px;
+    }
+
+    .food p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .tourism img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tourism p {
+        width: 95%;
+        padding: 20px;
+        padding-top: 0;
+        margin: 0 auto;
+        text-align: justify;
+        text-justify: inter-word;
+
+    }
+
+    td p {        
+        text-align: left;
+        line-height: 25px;        
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <table>
+            <tr>
+                <td>
+                    <div class="logo">
+                        <a href=""><img src="images/logo.png" alt="Logo"></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="title">
+                        <h1><a href="">KAMPUNG ORANG ASLI BATU 12, GOMBAK</a></h1>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed fb">
+                        <a href="https://www.facebook.com/pages/Kampung-Orang-Asli-Batu-12-Gombak/185972514851462" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png" alt="facebook">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed tw">
+                        <a href="https://twitter.com/kgbatu12gombak?lang=en" target="_blank" rel="noopener noreferrer">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="Twitter">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed jakoa">
+                        <a href="https://www.jakoa.gov.my/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/JAKOA_logo.svg/2560px-JAKOA_logo.svg.png" alt="JAKOA">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>   
+    </header>
+
+    <div class="nav-area">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="about.html">ABOUT</a></li>
+                    <div class="dropdown-list">
+                        <a href="about.html#jump-history">History</a>
+                        <a href="about.html#jump-people">People</a>
+                        <a href="about.html#jump-us">About Us</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="culture.html">CULTURE & HERITAGE</a></li>
+                    <div class="dropdown-list">
+                        <a href="culture.html#jump-dance">Dance</a>
+                        <a href="culture.html#jump-music">Music</a>
+                        <a href="culture.html#jump-marriage">Marriage</a>
+                        <a href="culture.html#jump-handcraft">Handcrafts</a>
+                        <a href="culture.html#jump-hunting">Hunting Tools</a>
+                    </div>
+                </div>                
+                <div class="dropdown">
+                    <li><a class="dropbtn selected" href="things.html">THINGS TO DO</a></li>
+                    <div class="dropdown-list">
+                        <a href="things.html#jump-activity">Local Activities</a>
+                        <a href="things.html#jump-food">Foods</a>
+                        <a href="things.html#jump-tourism">Tourism</a>
+                    </div>
+                </div>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="contact.html">CONTACT US</a></li>
+                    <div class="dropdown-list">
+                        <a href="contact.html#jump-directory">Directory</a>
+                        <a href="contact.html#jump-feedback">Feedback</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cover">
+    </div>
+
+    <main>
+        <h2 id="jump-activity">LOCAL ACTIVITIES</h2>
+
+        <div class="local">
+            <table>
+                <tr class="hunting">
+                    <td>
+                        <h3>1. Food Hunting in the Forest</h3>
+                        <p>Learn and experience how the Indigenous People hunt using their traditional weapon and cook their food in the jungle.</p>
+                    </td>
+                    <td style="width: 480px;">
+                        <img src="images/foodhunt.jpg" alt="food hunt">
+                    </td>
+                </tr>
+                <tr class="jungle">
+                    <td>
+                        <h3>2. Jungle Trekking</h3>
+                        <p>Visitor can learn about the history of Gombak Jungle and gain knowledge about the plant and animal in the rainforest. 
+                            Visitor also can get the chance to swim in the stream after a long walk in the jungle.</p>
+                    </td>
+                    <td style="width: 480px;">
+                        <img src="images/trekking.jpg" alt="jungle trekking">
+                    </td>
+                </tr>
+                <tr class="kerchang">
+                    <td>
+                        <h3>3. Playing Kerchang</h3>
+                        <p>Kerchang is a traditional game puzzle of the Indigenous People. It also has been gazetted as Malaysia National Heritage in 2018. Challenge yourself and try to solve different level of Kerchang.</p>
+                    </td>
+                    <td style="width: 480px;">
+                        <img src="images/kerchang.jpg" alt="kerchang">
+                    </td>
+                </tr>
+                <tr class="weaving">
+                    <td>
+                        <h3>4. Weaving</h3>
+                        <p>Find out how to weave from the elderly of Indigeneous People to create variety of accessories and basket designs.</p>
+                    </td>
+                    <td style="width: 480px;">
+                        <img src="images/weav.jpg" alt="weaving">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br id="jump-food">
+
+        <h2>FOODS</h2>
+
+        <div class="food">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/food.jpg" alt="local food">
+                    </td>
+                    <td class="description">
+                        <h3>The Jungle Style Local Food</h3>
+                        <p>Grab a chance to experience how to cook your own meal the Indigenous People way. 
+                            The rice is cooked in bamboo, the meat is barbequed over a roaring flame, and water is boiled in bamboo to give it a naturally sweet taste. 
+                            It’s a Malaysian food culture most people cannot claim to have tried.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br id="jump-tourism">
+        
+        <h2>TOURISM</h2>
+
+        <div class="tourism">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/muzium.jpg" alt="museum">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Orang Asli Museum Gombak</h3>
+                        <p>Come and visit the Orang Ali Museum Gombak located near the Indigenous People Village. 
+                            This museum showcases the history and tradition of the Indigenous People. 
+                            This museum also aims to preserve the cultural heritage of indigenous Orang Asli people which including the famed Mah Meri of Pulau Carey. 
+                            It was established in 1987 and the entrance fee is free. 
+                            Visitors can see all the things display in the museum that related with aboriginal people in Selangor. 
+                            It opens daily from 9 a.m. until 5 p.m. except on Friday.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+
+        <button><a href="#top" style="text-decoration: none; color: black; padding: 10px;">Back to Top</a></button>
+
+        <br>
+        <br>
+        <br>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2021 Kampung Orang Asli Batu 12. Best viewed using the latest version of Google Chrome browser with a screen resolution of 1920 x 1080 pixels. Upadated on: 27/7/2021</p>
+    </footer>
+    
+</body>
+</html>

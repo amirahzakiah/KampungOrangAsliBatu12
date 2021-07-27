@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" style="border-radius: 50%;">
+    <title>Gallery</title>
+    <style>
+    .cover {
+        width: 100%;
+        height: 500px;
+        background-image: url("https://www.lokalocal.com/storage/images/trips/3586/1530371052_82401.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .gallery img {
+    vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+    position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+
+    .prev {
+    cursor: pointer;
+    top: 40%;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    left: 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(240, 243, 244, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 16px;
+    color: white;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+    float: left;
+    width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+    opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+    opacity: 1;
+    }
+
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <table>
+            <tr>
+                <td>
+                    <div class="logo">
+                        <a href=""><img src="images/logo.png" alt="Logo"></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="title">
+                        <h1><a href="">KAMPUNG ORANG ASLI BATU 12, GOMBAK</a></h1>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed fb">
+                        <a href="https://www.facebook.com/pages/Kampung-Orang-Asli-Batu-12-Gombak/185972514851462" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png" alt="facebook">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed tw">
+                        <a href="https://twitter.com/kgbatu12gombak?lang=en" target="_blank" rel="noopener noreferrer">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="Twitter">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="socmed jakoa">
+                        <a href="https://www.jakoa.gov.my/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/JAKOA_logo.svg/2560px-JAKOA_logo.svg.png" alt="JAKOA">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>   
+    </header>
+
+    <div class="nav-area">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="about.html">ABOUT</a></li>
+                    <div class="dropdown-list">
+                        <a href="about.html#jump-history">History</a>
+                        <a href="about.html#jump-people">People</a>
+                        <a href="about.html#jump-us">About Us</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="culture.html">CULTURE & HERITAGE</a></li>
+                    <div class="dropdown-list">
+                        <a href="culture.html#jump-dance">Dance</a>
+                        <a href="culture.html#jump-music">Music</a>
+                        <a href="culture.html#jump-marriage">Marriage</a>
+                        <a href="culture.html#jump-handcraft">Handcrafts</a>
+                        <a href="culture.html#jump-hunting">Hunting Tools</a>
+                    </div>
+                </div>                
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="things.html">THINGS TO DO</a></li>
+                    <div class="dropdown-list">
+                        <a href="things.html#jump-activity">Local Activities</a>
+                        <a href="things.html#jump-food">Foods</a>
+                        <a href="things.html#jump-tourism">Tourism</a>
+                    </div>
+                </div>
+                <li><a class="selected" href="gallery.html">GALLERY</a></li>
+                <div class="dropdown">
+                    <li><a class="dropbtn" href="contact.html">CONTACT US</a></li>
+                    <div class="dropdown-list">
+                        <a href="contact.html#jump-directory">Directory</a>
+                        <a href="contact.html#jump-feedback">Feedback</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cover">
+    </div>
+
+    <main>
+        <h2>GALLERY</h2>
+
+        <div class="gallery">
+            <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="images/g13.jpg" style="width:100%" alt="children">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="images/g10.jpg" style="width:100%" alt="cooking">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="images/g9.jpg" style="width:100%" alt="kerchang">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="images/g11.jpg" style="width:100%" alt="traditional">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="images/g2.jpg" style="width:100%" alt="survival">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="images/g4.jpg" style="width:100%" alt="hospital">
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/g13.jpg" style="width:100%" onclick="currentSlide(1)" alt="Semai children">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/g10.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cooking local food">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/g9.jpg" style="width:100%" onclick="currentSlide(3)" alt="Visitors playing the Kerchang">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/g11.jpg" style="width:100%" onclick="currentSlide(4)" alt="Indigenous People in traditional clothing">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/g2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jungle survival">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="images/g4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Hospital Orang Asli Gombak">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <button><a href="#top" style="text-decoration: none; color: black; padding: 10px;">Back to Top</a></button>
+
+        <br>
+        <br>
+        <br>
+
+    </main>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+    <footer>
+        <p>Copyright &copy; 2021 Kampung Orang Asli Batu 12. Best viewed using the latest version of Google Chrome browser with a screen resolution of 1920 x 1080 pixels. Upadated on: 27/7/2021</p>
+    </footer>
+    
+</body>
+</html>

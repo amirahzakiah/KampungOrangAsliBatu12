@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAEDED;
+}
+
+table {
+    width: 100%;
+    position: static;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #374A56;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #374A56;
+}
+
+.fb img {
+    height: 20px;
+    float: right;
+}
+
+.tw img, .jakoa img {
+    height: 15px;
+    float: right;
+}
+
+.nav-area {
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px; 
+    z-index: 9;
+}
+
+.nav {
+    background-color: #374A56;
+    text-align: center;
+    padding: 10px;
+    font-family: calibri;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 0px;   
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav ul li a:hover {
+    background-color: #F8F9F9;
+    color: #374A56;
+}
+
+.nav ul li a.selected {
+    background-color: #F8F9F9;
+    color: #374A56;
+}
+
+.nav ul li a:active {
+  background-color: #566573;
+  color: antiquewhite;
+}
+
+.dropdown {
+    display: inline-block;
+  }
+  
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #E5E7E9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .dropdown-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropdown-list a:hover {
+    background-color: #ddd;  
+  }
+  
+  
+  .dropdown:hover .dropdown-list {
+    display: block;
+  }
+  
+  
+  .dropdown:hover {
+    background-color: #F8F9F9;
+    color: #374A56;
+  }
+  
+  .dropbtn {
+    background-color: #374A56;
+  }
+
+
+
+main {
+    background-color: #F8F9F9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: #515A5A;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #374A56;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
